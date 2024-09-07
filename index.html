@@ -74,31 +74,87 @@ ul.checklist li input{
 <!--checklist-->
 <section>
    <ul id="checklist">
-    <li class="" id="box1">
+    <li class="" id="box1" >
         <span >Mere</span>
         <input value="Mere" />
-        <button id="button1"> </button>
+        <button id="button1" data-panelId="box1"> </button>
     </li>
     <li class="" id="box2">
         <span >Pere</span>
         <input value="Pere" />
-        <button id="button2"> </button>
+        <button id="button2" data-panelId="box2"> </button>
     </li>
     <li class="" id="box3">
         <span >Banane</span>
         <input value="Banane" />
-        <button id="button3"> </button>
+        <button id="button3" data-panelId="box3"> </button>
     </li>
 
     </ul>
 </section>
+<style>
 
+section#listaTest ul {
+    list-style-type: none; 
+    padding: 0; 
+}
+section#listaTest ul li{
+    display:flex;
+    align-items: center;
+    margin-right: 10px;
+}
+section#listaTest ul button{
+    margin-left:10px;
+    width: auto;
+    height: auto;
+} 
+</style>
+<section id="listaTest">
+    <ul>
+        <li class="list" id="li1">
+             <span id="s1">Andrei</span>
+        <button class="button" id="button1" data-spanId="s1">
+            check
+        </button>
+        </li>
+        <li class="list" id="li2"> 
+            <span id="s2">Ciocoiu</span>
+        <button class="button" id="button2" data-spanId="s2">
+            check
+        </button>
+        
+        </li>
+      <li class="list" id="li3">
+        <span id="s3">David</span>
+        <button class="button" id="button3" data-spanId="s3">
+            check
+        </button>
+        
+       </li>
+    
+    </ul>
+</section>
 
 
     <footer>
         strada preciziei
         </footer>
         <script src="scripts/main.js"></script>
+        <script src="scripts/jQuery.js"></script>
+        <script>
+            $(function(){
+                $('#listaTest ul li .button').on("click" , function(){
+                    var spanID=$(this).attr('data-spanId');
+                    console.log(spanID);
+                    $('#'+ spanID ).toggle();
+
+                });
+                
+
+            })
+            
+
+        </script>
     </body>
 </html>
 
