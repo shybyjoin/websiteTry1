@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+
+        <title>Ars Restitutio</title>
+        <link rel="stylesheet" href="styles/style.css" type ="text/css">
+    </head>
+    <body >
+        <header>
+         <nav >
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="pages/locations.html">Locations</a></li>
+                <li class="logo"><a href="index.html"> Site Logo </a></li>
+                <li><a href= pages/contact.html>Contact</a></li>
+                <li><a href="pages/galerie"> Galerie</a></li>
+            </ul>  
+         </nav>
+    </header> 
+
+    
+    <section class="features">
+        <ul>
+            <figure>
+                <img  class="hide" id="poza1" src="imagini/logo3.jpg" alt="foc"> 
+                 <figcaption> <a data-img="poza1" id="caption1" >Fresh bread</a> </figcaption>   
+                </figure>
+            <figure>
+                <img class= "hide" id = "poza2" src="imagini/logo1.png" alt="foc"> 
+                <figcaption><a data-img ="poza2" id="caption2" >Fresh coffe</a></figcaption>
+            </figure>
+            <figure>
+                <img class="hide" id="poza3" src="imagini/logo3.jpg" alt="foc"> 
+                <figcaption><a data-img = "poza3" id="caption3" >Fresh shub</a></figcaption>
+            </figure>
+        </ul>
+    </section>
+<section class="chenare">
+    <input class="chenar" id= "num-one" > + <input class="chenar" id="num-two">
+</section>
+<p id="add-sum"></p>
+<!-- style for checklist-->
+<style>
+
+section ul#checklist li input{
+    display: none;
+}
+section ul#checklist li.edit span{
+display: none;    
+}
+section ul#checklist li.edit input{
+    display: initial;
+}
+
+section ul#checklist li button {
+    display:none;
+}
+section ul#checklist li.edit button{
+    display: inline-block;
+    height: 20px;
+    width: 30px;
+    position: relative;
+    bottom:  5px;
+    
+}
+ul.checklist li input{
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+</style>
+<!--checklist-->
+<section>
+   <ul id="checklist">
+    <li class="" id="box1">
+        <span >Mere</span>
+        <input value="Mere" />
+        <button id="button1"> </button>
+    </li>
+    <li class="" id="box2">
+        <span >Pere</span>
+        <input value="Pere" />
+        <button id="button2"> </button>
+    </li>
+    <li class="" id="box3">
+        <span >Banane</span>
+        <input value="Banane" />
+        <button id="button3"> </button>
+    </li>
+
+    </ul>
+</section>
+
+
+
+    <footer>
+        strada preciziei
+        </footer>
+        <script src="scripts/main.js"></script>
+    </body>
+</html>
+

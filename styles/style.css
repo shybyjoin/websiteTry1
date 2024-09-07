@@ -1,0 +1,154 @@
+
+body{
+    background-color: rgb(255, 255, 255);
+    padding: 0;
+    margin:0;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+/*header */
+header{
+    display: flex;
+    background-image: url("../imagini/sedinta_foto.png");
+    background-size: 120%;
+    background-position:center;
+    background-position: -40px;
+    color: white;
+    padding: 20px;
+    height: 500px;
+    text-transform: uppercase;
+    justify-content: center;
+    align-items: center;
+    
+    
+    
+}
+
+header .logo a {
+    background-image: url("../imagini/logo1.png");
+    background-size: 80px; 
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    display: inline-block;
+    height : 80px;
+    text-indent: -999999px;
+    width: 80px;
+    position: relative;
+    
+}
+header ul {
+    display:flex;
+    flex-direction: row;
+    list-style-type: none; 
+    background-color: hsla(4, 31%, 67%, 0.507);
+    height: 50px;
+    align-items: center;
+    
+}
+
+header li{
+    display: flex;
+    flex-direction: row;
+    margin-right: 30px;
+    align-items: center;
+    
+
+}
+header nav ul{
+    margin:0;
+    list-style-type: none;
+    position:relative;
+    top: -150px;
+}
+header nav li{
+    display: inline block;
+    
+}
+
+/* text */
+a:hover{
+    background-color: rgb(34, 34, 34);
+    text-decoration: solid;
+
+}
+a:visited{
+    text-decoration:none;
+    color:rgb(99, 19, 92);
+
+}
+
+
+/*features */
+.features ul {
+    display: flex;
+    flex-direction: row; 
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.features{
+    background: white;
+    color:rgb(0, 0, 0);  
+    padding: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+
+
+.features figure{
+    padding:5px;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;    
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+    
+}   
+.features figure figcaption{
+    margin-top: 10px;
+}
+.features figure img{
+    border-radius: 50%;
+    width: 200px;
+    box-shadow: rgb(184, 184, 184) 0 0 10px ;
+    border: 1px solid white;
+}
+/*responsive rules*/
+
+/*chenare*/
+
+.chenare{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+
+}
+section .chenar{
+display: flex;
+flex-direction: row;
+
+}
+#num-two{
+    margin-left:0;
+}
+.add-sum{
+    justify-content: center;
+    
+}
+/*footer */
+footer{
+    background-color: rgb(0, 0, 0);
+    padding: 20px;
+    color: gray;
+    text-align: center;
+    font-size: 15px;
+    
+
+}
+.hide{
+    display: none;
+}
