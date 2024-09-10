@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <head> 
 
-        <title>Ars Restitutio</title>
+        <title>  Ars Restitutio </title>
         <link rel="stylesheet" href="styles/style.css" type ="text/css">
     </head>
     <body >
@@ -14,7 +14,7 @@
 
         </section>
         <header>
-            <img id=backgroundTop style="color: grey;">
+            
          <nav >
             <ul id="topBar">
                 <li class="elementTopBar"><a href="index.html">Home</a></li>
@@ -24,22 +24,106 @@
                 <li class="elementTopBar"><a href="pages/galerie"> Galerie</a></li>
             </ul>  
          </nav>
-       
+       <section id="titluS"> <h1 id = titlu> Ars Restitutio</h1></section>
     </header> 
-    <section id="cuprins">
-        <figure class="imagini">
-            <img src="imagini/logo.png" alt="1">
-        </figure>
-        <figure class="imagini">
-            <img src="imagini/logo.png" alt="2">
-
-        </figure>
-        <figure class="imagini">
-            <img src="imagini/logo.png" alt="3">
-
-        </figure>
-    </section>
     
+    <style>
+        .sectiune{
+            display: flex;
+            flex-direction: row;
+            border: 100px black;
+            box-shadow: black 10px 10px 10px 10px;
+            margin-bottom:150px;
+            margin-left:100px;
+            margin-top:200px;
+            width: 1600px;
+            height: auto;
+            background-image: linear-gradient(#c24425,#899615);
+            transition: padding 0.3s ease-in-out;
+            
+        }
+        .sectiune img.imaginePanouri{
+            display: flex;
+            align-items: center;
+            margin:0;
+            width: 900px;
+            height: 300px;
+            
+        }
+        .sectiune p.titluSegment{
+            margin-left: 50px;
+            font-size: 50px;
+            margin-right: 100px;
+            
+        }
+        #panouri{
+            display:flex;
+            flex-direction: column;
+            background-image: linear-gradient(#fff3e6,#792400);
+            position: relative;
+            
+        }
+        .sectiune p.textSegment{
+            padding: 17px;
+            padding-bottom: 0;
+            flex-wrap: wrap;
+        }
+        #panouri .zonaText .titluSegment{
+            display: flex;
+            flex-wrap: wrap;
+            box-shadow: black 1px 1px 1px 1px;
+            border-bottom-color:black;
+        }
+        
+        #panouri .sectiune.active{
+            padding:17px;
+        }
+    </style>
+<section id="panouri">
+    <section id= sectiune1 class="sectiune" data-sectiuneId="sectiune1">
+        <img class= imaginePanouri id ='img1' src="imagini/test.png" alt="imaginea1">
+        <section class=zonaText>
+         <p id="titluSegment1" class = titluSegment>
+            Cine suntem noi?
+         </p>
+         <p id= 'textSegment1' class=" textSegment">
+            Suntem o echipă pasionată de arta restaurării lemnului, cu o experiență de peste [X ani] în domeniu. La [Numele Companiei], ne dedicăm conservării și redării frumuseții autentice a obiectelor din lemn, fie că este vorba de mobilier de epocă, uși, ferestre sau alte elemente de arhitectură tradițională.
+Misiunea noastră este să readucem la viață piesele din lemn, îmbinând măiestria tradițională cu tehnologiile moderne. Printr-o atenție deosebită la detalii și respect pentru istoria fiecărei lucrări, oferim soluții personalizate care păstrează autenticitatea și valoarea culturală a fiecărui obiect.
+Indiferent dacă doriți să restaurați o piesă de mobilier cu valoare sentimentală sau să reabilitați elemente de lemn dintr-o clădire istorică, suntem aici pentru a transforma dorințele dumneavoastră în realitate. Ne bazăm pe calitate, profesionalism și respect pentru meșteșugul restaurării, contribuind astfel la păstrarea patrimoniului cultural românesc.
+         </p>
+        </section>
+    </section>
+
+
+    <section id= sectiune2 class="sectiune" data-sectiuneId="sectiune2">
+        <img class= imaginePanouri id ='img2' src="imagini/test.png" alt="imaginea2">
+        <section class=zonaText>
+         <p id="titluSegment2" class = titluSegment>
+            Cine suntem noi?
+         </p>
+         <p id= 'textSegment2' class=" textSegment">
+            Suntem o echipă pasionată de arta restaurării lemnului, cu o experiență de peste [X ani] în domeniu. La [Numele Companiei], ne dedicăm conservării și redării frumuseții autentice a obiectelor din lemn, fie că este vorba de mobilier de epocă, uși, ferestre sau alte elemente de arhitectură tradițională.
+Misiunea noastră este să readucem la viață piesele din lemn, îmbinând măiestria tradițională cu tehnologiile moderne. Printr-o atenție deosebită la detalii și respect pentru istoria fiecărei lucrări, oferim soluții personalizate care păstrează autenticitatea și valoarea culturală a fiecărui obiect.
+Indiferent dacă doriți să restaurați o piesă de mobilier cu valoare sentimentală sau să reabilitați elemente de lemn dintr-o clădire istorică, suntem aici pentru a transforma dorințele dumneavoastră în realitate. Ne bazăm pe calitate, profesionalism și respect pentru meșteșugul restaurării, contribuind astfel la păstrarea patrimoniului cultural românesc.
+         </p>
+        </section>
+    </section>
+
+
+        <section id= sectiune3 class="sectiune" data-sectiuneId="sectiune3">
+            <img class= imaginePanouri id ='img3' src="imagini/test.png" alt="imaginea3">
+            <section class=zonaText>
+             <p id="titluSegment3" class = titluSegment>
+                Cine suntem noi?
+             </p>
+             <p id= 'textSegment3' class=" textSegment">
+                Suntem o echipă pasionată de arta restaurării lemnului, cu o experiență de peste [X ani] în domeniu. La [Numele Companiei], ne dedicăm conservării și redării frumuseții autentice a obiectelor din lemn, fie că este vorba de mobilier de epocă, uși, ferestre sau alte elemente de arhitectură tradițională.
+    Misiunea noastră este să readucem la viață piesele din lemn, îmbinând măiestria tradițională cu tehnologiile moderne. Printr-o atenție deosebită la detalii și respect pentru istoria fiecărei lucrări, oferim soluții personalizate care păstrează autenticitatea și valoarea culturală a fiecărui obiect.
+    Indiferent dacă doriți să restaurați o piesă de mobilier cu valoare sentimentală sau să reabilitați elemente de lemn dintr-o clădire istorică, suntem aici pentru a transforma dorințele dumneavoastră în realitate. Ne bazăm pe calitate, profesionalism și respect pentru meșteșugul restaurării, contribuind astfel la păstrarea patrimoniului cultural românesc.
+             </p>
+            </section>
+        </section>
+</section>
 
     <section class="features">
         <ul>
@@ -155,7 +239,12 @@ section#listaTest ul button{
     </ul>
 </section>
 
-
+<style>
+    #pl{
+        width: 200px;
+        height: 200px;
+    }
+</style>
     <footer>
         strada preciziei
         </footer>
@@ -163,6 +252,7 @@ section#listaTest ul button{
         <script src="scripts/jQuery.js"></script>
         <script>
             $(function(){
+    
                 $('#listaTest ul li .button').on("click" , function(){
                     var spanID=$(this).attr('data-spanId');
                     console.log(spanID);
@@ -170,7 +260,29 @@ section#listaTest ul button{
 
                 });
                 
+                
+                /* mouse enter and leave event in jquery */
 
+
+                $(".sectiune").on("mouseenter", function(){
+    
+                   /* var sectiuneCurenta = $(this).attr('data-sectiuneId')
+                    $('#'+ sectiuneCurenta).stop(true,true).delay(100).animate({
+                       padding:"17px",
+                    })
+                    */
+                   $(this).addClass("active");
+                })
+                $(".sectiune").on("mouseleave", function(){
+                    /*var sectiuneCurenta = $(this).attr('data-sectiuneId')
+                    $('#'+ sectiuneCurenta).stop(true,true).delay(500).animate({
+                        padding:"0px",
+                    }, 200);
+                    */
+                   $(this).removeClass("active");
+                })
+                
+                
             })
             
 

@@ -86,3 +86,5 @@ function editExit(event){
     spanValue.textContent = inputValue;
     
 }
+
+var sectiunea1 = document.getElementById("sectiune1");
