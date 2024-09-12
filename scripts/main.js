@@ -87,4 +87,3 @@ function editExit(event){
     
 }
 
-var sectiunea1 = document.getElementById("sectiune1");
